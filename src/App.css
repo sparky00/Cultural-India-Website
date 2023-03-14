@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&family=Teko:wght@600&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  /* border: 2px solid goldenrod; */
+  text-align: center;
+  color: white;
+  background-color: black;
+  
+}
+.header {
+  border: 2px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-size: 30px;
+  position: fixed;
+  /* border: 2px solid magenta; */
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Teko', sans-serif;
+}
+.Box {
+  margin: 20px;
+  display: inline-block;
+  /* border: 2px solid gray; */
+  width: 900px;
+  height: 900px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#Left-Box {
+  /* background-color: greenyellow; */
+  margin-top: 43px;
+  width: 300px;
+  position: fixed;
+  left: 4px;
+  top: 106px;
+}
+#Middle-Box {
+  position: relative;
+  top: 106px;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Teko', sans-serif;
+font-size: 100px;
+text-align:justify;
+height: 2000px;
+}
+
+#scene {
+  position: fixed;
+  right: 4px;
+  top: 106px;
+  width: 450px;
+}
+
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+/* nav{
+  font-size: 25px;
+} */
+/* nav ul li a {
+  
+  padding:5px;
+  margin: px;
+  text-decoration: none;
+} */
+/* nav ul{
+  list-style-type: none;
+  text-align:justify;
+ 
+} */
+
+nav {
+  white-space: nowrap;
+
+  font-size: 25px;
+}
+nav ul {
+  list-style: none;
+  margin: 10;
+  padding: 20px;
+}
+/* Only stick if you can fit */
+
+/* nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+
+  text-decoration: none;
+} */
+
+.video-responsive {
+  margin-top: 80px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+
+
+/* CSS */
+.button-59 {
+
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.sliderimg{
+  width: 100%;
+  height: 500px;
+  object-fit: cover
 }
